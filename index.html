@@ -1,0 +1,74 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Juan Jose HM">
+  <meta name="description" content="Sitio web Personal">
+
+	<title>JDev</title>
+	<link rel="icon" href="favicon.ico" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">	
+  <link href="./main.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!--Inicio navegacion-->
+  <div class="container">
+    <div class="logo">
+      <a href="#"><img src="./jdev.png" alt="logo"></a>
+    </div>
+  
+    <div class="navbar">      
+      <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+        
+      <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="https://api.whatsapp.com/send?phone=527712200410&text=Hola">Contactame</a></li>
+      </ul>
+        
+    </div>
+  </div>
+<!--Fin navegacion-->
+  
+  
+<main>
+  <div class="card">
+    <img src="./io.jpeg" alt="JDev" style="width:100% ;border-radius: 50%;">
+    <h1 style="color:#ffffff;">Juan José Hernández Martínez</h1>
+    <p class="title">Desarrollador Analista & Freelance</p>
+      
+    <a href="https://www.facebook.com/joanjodev"><button style="margin-bottom: 5px;">Sigueme en Facebook</button></a>
+    <a href="https://www.linkedin.com/in/joanjo/"><button>Linked In</button></a>
+  </div>
+</main>
+
+
+
+
+
+
+<script>
+  var navList = document.getElementById("nav-lists");
+  function Show() {
+    navList.classList.add("_Menus-show");
+  }
+            
+  function Hide(){
+    navList.classList.remove("_Menus-show");
+  }
+</script>
+
+
+</body>
+</html>
